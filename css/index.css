@@ -29,6 +29,7 @@ article {
     background-size: initial;
     margin: 5rem;
 }
+
 a{
     display: flex;
     justify-content: center;
@@ -42,6 +43,7 @@ img{
     box-shadow: 0px 0px 5px;
 }
 
+/* Effet zoom */
 article:hover {
     cursor: pointer;
     opacity: .5;
