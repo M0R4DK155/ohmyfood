@@ -4,3 +4,11 @@
 main {
   font-family: "Croissant one", sans-serif;
 }
+
+h2{
+  background: -webkit-linear-gradient(315deg, #d8852e, #6e4ccc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: lighter;
+  font-size: 1.8em;
+}

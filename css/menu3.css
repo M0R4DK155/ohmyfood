@@ -4,3 +4,11 @@
 main {
   font-family: "Alex brush", sans-serif;
 }
+
+h2{
+  color: #0936e0;
+  background: -webkit-linear-gradient(left, #0936e0, #399dfa);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: lighter;
+}

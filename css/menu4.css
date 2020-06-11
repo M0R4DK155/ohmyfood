@@ -4,3 +4,10 @@
 main {
   font-family: "Kaushan Script", sans-serif;
 }
+
+h2{
+  color: #3d9339;
+    background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
