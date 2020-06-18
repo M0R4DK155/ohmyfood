@@ -1,15 +1,28 @@
 main{
   margin-bottom: 7rem;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 2em;
+  padding: 3rem;
+  padding-bottom: 7rem;
 }
 
 h2{
   text-align: center;
-  font-size: 1.8em;;
+  font-size: 1.8em;
+  width: fit-content;
+  margin: auto;
 }
 
 h3{
   text-align: center;
   font-size: 1em;
+}
+
+h3:before, h3:after{
+  content: "---------"
+  
+
 }
 
 li {
@@ -24,8 +37,8 @@ ul {
   font-size: 0.6em;
 }
 
-i {
-  text-align: center;
+.fas .fa{
+  align-items: center;
 }
 
 @media screen and (min-width: 768px){

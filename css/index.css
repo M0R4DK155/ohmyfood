@@ -2,10 +2,9 @@ main{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* margin-bottom: 4rem; */
     max-width: 1024px;
     margin: 0 auto 4rem auto;
-    /* border: 1px solid; */
+    margin-bottom: 7rem;
 }
 
 article {
@@ -18,11 +17,10 @@ article {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 5%;
-    margin:30px;
+    overflow: hidden;
 
     /* Effet survol */
-    transition: transform 1s, opacity 1s;
-    box-shadow: 0 0px 10px #667;
+
     background-size: initial;
     margin: 5rem;
 }
@@ -39,11 +37,10 @@ img{
 }
 
 /* Effet zoom */
-article:hover {
-    cursor: pointer;
+article div:hover {
     opacity: .5;
     transform: scale(1.1);
-    overflow: hidden;
+    transition: transform 1s, opacity 1s;
 
 }
 
@@ -60,10 +57,7 @@ article.lne{
 }
 
 article.lne a{
-    text-decoration: none;
-    text-decoration-line: none;
     font-size: 30px;
-    color: var(--marron);
     font-style: italic;
 }
 
@@ -82,9 +76,7 @@ article.lcf{
     box-shadow: 0 0 1em var(--gris);
 }
 
-article.lcf a{
-    text-decoration: none;
-    text-decoration-line: none;
+article.lcf h3{
     font-size: 1.3rem;
     color: var(--violetclair);
     background: -webkit-linear-gradient(315deg, #d8852e, #6e4ccc);
@@ -92,10 +84,18 @@ article.lcf a{
     -webkit-background-clip: text;
     font-weight: lighter;
     font-style: italic;
+
 }
 
 article.lcf h2{
-    font-family: Croissant one, sans-serif;
+    text-align: center;
+    color: var(--violetclair);
+    background: -webkit-linear-gradient(315deg, #d8852e, #6e4ccc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: lighter;
+    font-style: italic;
+
 }
 
 article.lcf p{
@@ -110,12 +110,13 @@ article.ldp{
     box-shadow: 0 0 1em var(--gris);
 }
 
-article.ldp a{
+article.ldp h3{
     text-decoration: none;
     text-decoration-line: none;
+    font-family: Croissant one, sans-serif;
+    text-align: center;
     font-size: 1.5rem;
     color: var(--bleu);
-    color: #0936e0;
     background: -webkit-linear-gradient(left, #0936e0, #399dfa);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -125,6 +126,13 @@ article.ldp a{
 
 article.ldp h2{
     font-family: Alex brush, sans-serif;
+    text-align: center;
+    color: var(--bleu);
+    background: -webkit-linear-gradient(left, #0936e0, #399dfa);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 article.ldp p{
@@ -139,7 +147,7 @@ article.lpg{
     box-shadow: 0 0 1em var(--gris);
 }
 
-article.lpg a{
+article.lpg h3{
     text-decoration: none;
     text-decoration-line: none;
     font-size: 1.5rem;
@@ -165,16 +173,13 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 div > p {
     display: flex;
-    font-family: Montserrat;
-    background-color: var(--vert);
-    font-size: 20px;
     text-align: center;
     justify-content: left;
-    color: var(--jaune);
     border-radius: 5px;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -182,8 +187,12 @@ div > p {
     padding-right: 6%;    
 }
 
+
+
 /* Effet pointillée */
 .chargement {
+    background-color: var(--vert);
+    color: var(--jaune);
     margin: 20px;
     font-size: 20px;
     font-family: Montserrat, sans-serif;
@@ -226,22 +235,6 @@ footer p a:hover {
     
 
 @media screen and (min-width: 768px) {
-main{
-    margin-bottom: 7rem;
-}
-
-article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    height: 424px;
-    /* border: 1px solid; */
-    transition: transform 1s, opacity 1s;
-    box-shadow: 0 0px 10px #666;
-}
-
 p{
     display: flex;
     font-size: 1.3em;
@@ -251,11 +244,6 @@ p{
     border-radius: 5px;
 }
 
-a{
-    display: flex;
-    justify-content: center
-}
-
 img{
     display: flex;
     width: 40%;
@@ -263,52 +251,9 @@ img{
 }
 
 div > p {
-    display: flex;
-    background-color: var(--vert);
     font-weight: bold;
-    text-align: center;
-    justify-content: center;
-    color: var(--jaune);
-    border-radius: 5px;
     }
     
-}
-
-article.lne{
-    background-color:var(--saumon);
-    box-shadow: 0 0 1em var(--gris);
-}
-
-article.lne a{
-    text-decoration: none;
-    text-decoration-line: none;
-    font-size: 30px;
-    color: var(--marron);
-}
-
-article.lne h2{
-    font-family: Devonshire, sans-serif;
-}
-
-article.lne p{
-    font-family: Kalam, sans-serif;
-    font-size: 2rem;
-}
-
-article.lcf{
-    background-color:var(--mauveclair);
-    box-shadow: 0 0 1em var(--gris);
-}
-
-article.lcf a{
-    text-decoration: none;
-    text-decoration-line: none;
-    font-size: 1.3rem;
-    color: var(--violetclair);
-}
-
-article.lcf h2{
-    font-family: Croissant one, sans-serif;
 }
 
 article.lcf p{
@@ -318,20 +263,11 @@ article.lcf p{
     color: var(--brun);
 }
 
-article.ldp{
-    background-color:var(--blancfonce);
-    box-shadow: 0 0 1em var(--gris);
-}
-
 article.ldp a{
     text-decoration: none;
     text-decoration-line: none;
     font-size: 1.5rem;
     color: var(--bleu);
-}
-
-article.ldp h2{
-    font-family: Alex brush, sans-serif;
 }
 
 article.ldp p{
@@ -341,20 +277,11 @@ article.ldp p{
     color: var(--bleuclair);
 }
 
-article.lpg{
-    background-color:var(--blanc);
-    box-shadow: 0 0 1em var(--gris);
-}
-
 article.lpg a{
     text-decoration: none;
     text-decoration-line: none;
     font-size: 1.5rem;
     color: var(--vertclair);
-}
-
-article.lpg h2{
-    font-family: Kaushan script, sans-serif;
 }
 
 article.lpg p{

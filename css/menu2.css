@@ -3,6 +3,7 @@
 
 main {
   font-family: "Croissant one", sans-serif;
+  background-color: var(--mauveclair);
 }
 
 h2{

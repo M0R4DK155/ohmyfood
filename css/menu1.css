@@ -3,8 +3,14 @@
 
 main {
   font-family: "Devonshire", sans-serif;
+  background-color: var(--saumon);
 }
+
 
 h2{
   color: var(--marron);
+}
+
+i{
+  text-align: center;
 }

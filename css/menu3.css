@@ -2,25 +2,22 @@
 @import url("./menus.css");
 
 main {
-  font-family: "Alex brush", sans-serif;
+	font-family: "Alex brush", sans-serif;
+	background-color: var(--blancfonce);
 }
 
-h2{
-  color: #0936e0;
-  background: -webkit-linear-gradient(left, #0936e0, #399dfa);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: lighter;
+h2 {
+	color: #0936e0;
+	background: -webkit-linear-gradient(left, #0936e0, #399dfa);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-weight: lighter;
 }
 
-h3{
-  font-family: Kalam;
+h3 {
+	font-family: "Kalam", sans-serif;
 }
 
-ul{
-  0.8em;
-}
-
-li{
-  font-family: cookie;
+li {
+	font-family: "Cookie";
 }

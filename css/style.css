@@ -18,6 +18,10 @@
     --vertpale: #bfff7e;
     --violetclair: #905bfd;
     --saumon: #fcdfdb;
+
+
+
+    --degradeMenu4: -webkit-linear-gradient(left #3d9339, #bfff7e)
   
 }
 
@@ -29,15 +33,18 @@ body{
     text-decoration-line: none;
 }
 
-
-
-header {
+header{
     font-family: Montserrat, sans-serif;
     text-align: center;
     display: block;
     background-color: var(--vert);
     color: var(--jaune);
     text-decoration: none;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--jaune);
 }
 
 header h1{
@@ -66,10 +73,9 @@ footer{
 
 }
 
-a{
+footer a{
     text-decoration: none;
     color: var(--jaune);
-
 }
 
 @media screen and (min-width: 768px) {
@@ -78,14 +84,6 @@ footer{
     font-size: 1.5em;
     height: 5rem;     
 }  
-
-header {
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    display: block;
-    background-color: var(--vert);
-    color: var(--jaune);
-}
 
 header h1{
     font-size: 3.5em;
