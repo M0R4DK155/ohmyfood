@@ -1,32 +1,48 @@
-@import url("./section.css");
 @import url("./animations.css");
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=Alex+Brush&family=Croissant+One&family=Devonshire&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap');
 
 
 :root{
+    /* Couleurs Header et Footer */
+    --jaune: #feca07;
+    --vert:  #579c87;
+    
+
+    /* Menu 1 - La note enchantée */
+    --marron: #3d1319;
+    --saumon: #fcdfdb;
+    --rosepale: #f26976;
+    --orangepale: #f6916a;
+
+    /* Menu 2 - Le chic à la française */
     --brun: #c77412;
+    --violetclair: #905bfd;
+    --mauveclair: #fff5fe;
+
+    /* Menu 3 - Le délice des papilles */
     --bleu: #0431df;
     --bleuclair: #1b91fa;
     --blancfonce: #f3f5f6;
-    --blancpale: #f7ffef;
-    --gris: #9e9e9e;
-    --jaune: #feca07;
-    --mauveclair: #fff5fe;
-    --marron: #3d1319;
-    --vert:  #579c87;
+    
+    /* Menu 4 - La palette du goût */
     --vertclair: #3d9339;
-    --vertpale: #bfff7e;
-    --violetclair: #905bfd;
-    --saumon: #fcdfdb;
+    --vertpale: #85f713;
+    --blanc: #ffffff;
 
+    /* Ombre */
+    --gris: #9e9e9e;
 
-
-    --degradeMenu4: -webkit-linear-gradient(left #3d9339, #bfff7e)
+    /* Dégradés */
+    --degradeNote:  -webkit-linear-gradient(left, var(--rosepale), var(--orangepale) );
+    --degradeMenu2: -webkit-linear-gradient(left, var(--brun), var(--violetclair) );
+    --degradeMenu3: -webkit-linear-gradient(left, var(--bleu), var(--bleuclair) );
+    --degradeMenu4: -webkit-linear-gradient(left, var(--vertclair), var(--vertpale) );
   
 }
 
 body{  
     margin: 0;
+    margin-bottom: 5em;
     width:100%; 
     height:100%;
     text-decoration: none;
@@ -79,12 +95,15 @@ footer a{
 }
 
 @media screen and (min-width: 768px) {
-    
+body{
+    margin-bottom: 8em;
+}
+
 footer{
     font-size: 1.5em;
     height: 5rem;     
 }  
-
+    
 header h1{
     font-size: 3.5em;
 }

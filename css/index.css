@@ -10,19 +10,15 @@ main{
 article {
     width: 300px;
     height: 424px;
-    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 5%;
     overflow: hidden;
-
-    /* Effet survol */
-
+    box-shadow: 0 0 1em var(--gris);
     background-size: initial;
-    margin: 5rem;
+    margin: 2rem;
 }
 
 a{
@@ -36,34 +32,29 @@ img{
     box-shadow: 0px 0px 5px;
 }
 
-/* Effet zoom */
-article div:hover {
-    opacity: .5;
-    transform: scale(1.1);
-    transition: transform 1s, opacity 1s;
-
+i{
+    background: var(--degradeNote);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 article a{
     text-decoration: none;
     text-decoration-line: none;
-    font-size: 1.6rem;
-    color: var(--marron);
 }
 
 article.lne{
     background-color:var(--saumon);
-    box-shadow: 0 0 1em var(--gris);
+    font-size: 1.6rem;
 }
 
 article.lne a{
     font-size: 30px;
-    font-style: italic;
+    color: var(--marron);
 }
 
 article.lne h2{
     font-family: Devonshire, sans-serif;
-
 }
 
 article.lne p{
@@ -73,93 +64,53 @@ article.lne p{
 
 article.lcf{
     background-color:var(--mauveclair);
-    box-shadow: 0 0 1em var(--gris);
-}
-
-article.lcf h3{
-    font-size: 1.3rem;
-    color: var(--violetclair);
-    background: -webkit-linear-gradient(315deg, #d8852e, #6e4ccc);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: lighter;
-    font-style: italic;
-
 }
 
 article.lcf h2{
+    font-size: 1.8rem;
     text-align: center;
     color: var(--violetclair);
-    background: -webkit-linear-gradient(315deg, #d8852e, #6e4ccc);
+    background: var(--degradeMenu2);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-weight: lighter;
-    font-style: italic;
-
 }
 
 article.lcf p{
     font-family: Croissant one, sans-serif;
     font-size: 2rem;
-    font-style: italic;
     color: var(--brun);
 }
 
 article.ldp{
     background-color:var(--blancfonce);
-    box-shadow: 0 0 1em var(--gris);
-}
-
-article.ldp h3{
-    text-decoration: none;
-    text-decoration-line: none;
-    font-family: Croissant one, sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--bleu);
-    background: -webkit-linear-gradient(left, #0936e0, #399dfa);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: lighter;
-    font-style: italic;
 }
 
 article.ldp h2{
     font-family: Alex brush, sans-serif;
+    font-size: 1.6rem;
     text-align: center;
     color: var(--bleu);
-    background: -webkit-linear-gradient(left, #0936e0, #399dfa);
+    background: var(--degradeMenu3);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-weight: lighter;
-    font-style: italic;
 }
 
 article.ldp p{
     font-family: Alex brush, sans-serif;
     font-size: 2rem;
-    font-style: italic;
     color: var(--bleuclair);
 }
 
 article.lpg{
     background-color:var(--blanc);
-    box-shadow: 0 0 1em var(--gris);
-}
-
-article.lpg h3{
-    text-decoration: none;
-    text-decoration-line: none;
-    font-size: 1.5rem;
-    color: var(--vertclair);
-    color: #3d9339;
-    background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 article.lpg h2{
     font-family: Kaushan script, sans-serif;
+    font-size: 2rem;
+    background: var(--degradeMenu4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 article.lpg p{
@@ -187,54 +138,12 @@ div > p {
     padding-right: 6%;    
 }
 
-
-
-/* Effet pointillée */
-.chargement {
-    background-color: var(--vert);
-    color: var(--jaune);
-    margin: 20px;
-    font-size: 20px;
-    font-family: Montserrat, sans-serif;
-    width: 165px;
-}
-
-.chargement:after {
-  display: inline-block;
-  animation: dotty steps(1,end) 1s infinite;
-  content: '';
-}
-
-@keyframes dotty {
-  0%   { content: ''; }
-  25%  { content: '.'; }
-  50%  { content: '..'; }
-  75%  { content: '...'; }
-  100% { content: ''; }
-}
-
-/* Effet wiggle */
-footer p a:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-}
-      
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-    
-
 @media screen and (min-width: 768px) {
+
+article{
+    margin: 2rem;
+}  
+
 p{
     display: flex;
     font-size: 1.3em;
@@ -253,39 +162,14 @@ img{
 div > p {
     font-weight: bold;
     }
-    
-}
-
-article.lcf p{
-    font-family: Croissant one, sans-serif;
-    font-size: 2rem;
-    font-style: italic;
-    color: var(--brun);
 }
 
 article.ldp a{
-    text-decoration: none;
-    text-decoration-line: none;
     font-size: 1.5rem;
-    color: var(--bleu);
-}
-
-article.ldp p{
-    font-family: Alex brush, sans-serif;
-    font-size: 2rem;
-    font-style: italic;
-    color: var(--bleuclair);
 }
 
 article.lpg a{
-    text-decoration: none;
-    text-decoration-line: none;
     font-size: 1.5rem;
     color: var(--vertclair);
 }
 
-article.lpg p{
-    font-family: Kaushan script, sans-serif;
-    font-size: 2rem;
-    color: var(--vertpale);
-}

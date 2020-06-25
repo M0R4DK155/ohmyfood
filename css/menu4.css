@@ -3,12 +3,61 @@
 
 main {
   font-family: "Kaushan Script", sans-serif;
-  background-color: var(--blanc)
+  background-color: var(--blanc);
 }
 
 h2{
   color: var(--vertclair);
-    background: -webkit-linear-gradient(left, var(--vertclair), #bfff7e);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  background: var(--degradeMenu4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
+
+h3{
+  font-size: 1.3em;
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 3px, transparent 5px) no-repeat center bottom / 0 100% ;
+  transition: background-size .7s;
+} 
+
+h3:hover{
+  background-size: 100% 100%;
+}
+
+h3:before, h3:after{
+  content: "----------------------";
+  background: var(--degradeMenu4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  letter-spacing: -4px;
+  font-family: Arial;  
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+ul{
+  font-size: 0.43em;
+}
+
+li{
+  font-size: 1.9em;
+}
+
+@media screen and (min-width: 768px){
+main {
+	font-size: 20px;
+}
+
+h2{
+  font-size: 3rem;
+  }
+
+ul{
+  font-size: 0.43em;
+}
+
+li{
+  font-size: 2.9em;
+}
+  }
