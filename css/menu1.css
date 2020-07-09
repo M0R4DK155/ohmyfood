@@ -1,74 +1,128 @@
 @import url("./style.css");
 @import url("./menus.css");
-
 main {
-  font-family: "Devonshire", sans-serif;
-  background-color: var(--saumon);
+	font-family: "Devonshire", sans-serif;
+	background-color: var(--saumon);
 }
 
 .subtitle {
-  text-align: center;
-  font-size: 1.2em;
-  padding-top: 1em;
+	text-align: center;
+	font-size: 1.2em;
+	padding-top: 1em;
 }
 
-i{
-  background: var(--degradeNote);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+i {
+	background: var(--degradeNote);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
 }
 
-h2{
-  color: var(--marron);
-  font-size: 2.2em;
+.prelude {
+	font-family: "kalam", sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: -0.1em;
 }
 
-h3{
-  font-size: 1.3rem;
-  color: inherit;
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 3px, transparent 1px) no-repeat center bottom / 0 100% ;
-  transition: background-size .7s;
-} 
-
-h3:hover{
-  background-size: 100% 100%;
+.pdorgue {
+	font-family: "kalam", sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: -0.1em;
 }
 
-h3:before, h3:after{
-  content: "----------------------";
-  background: var(--marron);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  letter-spacing: -4px;
-  font-family: Arial;  
-  margin: 0 2rem;
-  text-decoration: none;
+.mouv {
+	font-family: "kalam", sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: -0.1em;
 }
 
-h4{
-  font-size: 1.5em;
+h2 {
+	color: var(--marron);
+	font-size: 2.5em;
 }
 
-ul{
-  font-size: 1.1em;
+h3 {
+	font-family: "devonshire", Arial, Helvetica, sans-serif;
+	font-size: 1.3rem;
+	color: inherit;
+	position: relative;
+	text-decoration: none;
+	background: linear-gradient(to top, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 2px, transparent 1px) no-repeat bottom center / 0 100%;
+	transition: background-size .7s;
 }
 
-@media screen and (min-width: 768px){
-
-main{
-  font-size: 1.25em;
+h3:before,
+h3:after {
+	content: "-------------------------------------";
+	background: var(--marron);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	letter-spacing: -5px;
+	font-family: Arial;
+	margin: 0 1rem;
+	text-decoration: none;
 }
 
-h3{
-  font-size: 1.7rem;
+h3:hover {
+	background-size: 16% 100%;
+	width: 100%;
+	transition: all 300ms;
 }
 
-ul{
-  font-size: 1.6em;
+h3:hover:after {
+	width: 100%;
 }
 
-.subtitle {
-  font-size: 2.2em;
+h4 {
+	font-size: 1.5em;
 }
+
+ul {
+	font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+	main {
+		font-size: 1.25em;
+	}
+	h2{
+		font-size: 2.2em;
+	}
+
+	h3 {
+		font-size: 1.55rem;
+		width: fit-content;
+		margin: auto;
+		background: linear-gradient(to top, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 3px, transparent 1px) no-repeat bottom center / 0 100%;
+	}
+	h3:before,
+	h3:after {
+		letter-spacing: -5px;
+		margin: 0 4rem;
+	}
+	ul {
+		font-size: 1.6em;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.menulne {
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: 1.5em;
+		padding-top: 1em;
+	}
+	.subtitle {
+		font-size: 2.2em;
+	}
+	.prelude {
+		font-size: 0.77rem;
+		letter-spacing: -0.1em;
+	}
+	.pdorgue {
+		font-size: 0.77rem;
+		letter-spacing: -0.1em;
+	}
+	.mouv {
+		font-size: 0.77rem;
+		letter-spacing: -0.1em;
+	}
 }

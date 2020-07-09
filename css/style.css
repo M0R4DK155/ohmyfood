@@ -1,110 +1,101 @@
 @import url("./animations.css");
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=Alex+Brush&family=Croissant+One&family=Devonshire&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap');
-
-
-:root{
-    /* Couleurs Header et Footer */
-    --jaune: #feca07;
-    --vert:  #579c87;
-    
-
-    /* Menu 1 - La note enchantée */
-    --marron: #3d1319;
-    --saumon: #fcdfdb;
-    --rosepale: #f26976;
-    --orangepale: #f6916a;
-
-    /* Menu 2 - Le chic à la française */
-    --brun: #c77412;
-    --violetclair: #905bfd;
-    --mauveclair: #fff5fe;
-
-    /* Menu 3 - Le délice des papilles */
-    --bleu: #0431df;
-    --bleuclair: #1b91fa;
-    --blancfonce: #f3f5f6;
-    
-    /* Menu 4 - La palette du goût */
-    --vertclair: #3d9339;
-    --vertpale: #85f713;
-    --blanc: #ffffff;
-
-    /* Ombre */
-    --gris: #9e9e9e;
-
-    /* Dégradés */
-    --degradeNote:  -webkit-linear-gradient(left, var(--rosepale), var(--orangepale) );
-    --degradeMenu2: -webkit-linear-gradient(left, var(--brun), var(--violetclair) );
-    --degradeMenu3: -webkit-linear-gradient(left, var(--bleu), var(--bleuclair) );
-    --degradeMenu4: -webkit-linear-gradient(left, var(--vertclair), var(--vertpale) );
-  
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=Alex+Brush&family=Short+Stack&display=Croissant+One&family=Devonshire&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap');
+:root {
+	/* Couleurs Header et Footer */
+	--jaune: #feca07;
+	--vert: #579c87;
+	/* Menu 1 - La note enchantée */
+	--marron: #3d1319;
+	--saumon: #fcdfdb;
+	--rosepale: #f26976;
+	--orangepale: #f6916a;
+	/* Menu 2 - Le chic à la française */
+	--brun: #c67412;
+	--violetclair: #a56799;
+	--mauve: #6e4ccc;
+	--mauveclair: #fff5fe;
+	/* Menu 3 - Le délice des papilles */
+	--bleufonce: #0228dd;
+	--bleu: #0670f3;
+	--bleuclair: #229df9;
+	--blancfonce: #f3f5f6;
+	/* Menu 4 - La palette du goût */
+	--vertclair: #3d9339;
+	--vertpale: #85f713;
+	--blanc: #ffffff;
+	/* Ombre */
+	--gris: #9e9e9e;
+	/* Dégradés */
+	--degradeNote: -webkit-linear-gradient(left, var(--rosepale), var(--orangepale));
+	--degradeMenu2: -webkit-linear-gradient(left, var(--brun), var(--violetclair));
+	--degradeMenu3: -webkit-linear-gradient(left, var(--bleufonce), var(--bleuclair));
+	--degradeMenu4: -webkit-linear-gradient(left, var(--vertclair), var(--vertpale));
+	--degradeMenu4d: -webkit-linear-gradient(left, var(--vertpale), var(--vertclair));
 }
 
-body{  
-    margin: 0;
-    margin-bottom: 5em;
-    width:100%; 
-    height:100%;
-    text-decoration: none;
-    text-decoration-line: none;
+body {
+	height: 100%;
+	margin: 0;
+	margin-bottom: 5em;
+	text-decoration: none;
+	text-decoration-line: none;
+	width: 100%;
 }
 
-header{
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    display: block;
-    background-color: var(--vert);
-    color: var(--jaune);
-    text-decoration: none;
+header {
+	background-color: var(--vert);
+	color: var(--jaune);
+	display: block;
+	font-family: Montserrat, sans-serif;
+	text-align: center;
+	text-decoration: none;
 }
 
-header a{
-    text-decoration: none;
-    color: var(--jaune);
+header a {
+	color: var(--jaune);
+	text-decoration: none;
 }
 
-header h1{
-    font-size: 2.5em;
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    font-weight: bold;
-    height: 1.4em;
+header h1 {
+	display: flex;
+	font-size: 2.5em;
+	font-weight: bold;
+	height: 1.4em;
+	justify-content: center;
+	margin: 0;
 }
 
-footer{
-    display: flex;
-    font-family: Montserrat;
-    background-color: var(--vert);
-    font-size: 1em;
-    font-weight: bold;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--jaune);
-    width: 100%;
-    bottom:0;
-    left:0;
-    position: fixed;
-    height: 3rem;
 
+footer {
+	align-items: center;
+	background-color: var(--vert);
+	color: var(--jaune);
+	display: flex;
+	font-family: Montserrat;
+	font-size: 1em;
+	font-weight: bold;
+	justify-content: space-around;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	height: 3rem;
+	width: 100%;
 }
 
-footer a{
-    text-decoration: none;
-    color: var(--jaune);
+footer a {
+	color: var(--jaune);
+	text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
-body{
-    margin-bottom: 8em;
-}
-
-footer{
-    font-size: 1.5em;
-    height: 5rem;     
-}  
-    
-header h1{
-    font-size: 3.5em;
-}
+	body {
+		margin-bottom: 8em;
+	}
+	footer {
+		font-size: 1.5em;
+		height: 5rem;
+	}
+	header h1 {
+		font-size: 3.5em;
+	}
 }
