@@ -65,7 +65,6 @@ header h1 {
 	margin: 0;
 }
 
-
 footer {
 	align-items: center;
 	background-color: var(--vert);
@@ -99,11 +98,8 @@ footer a {
 		font-size: 3.5em;
 	}
 	p {
-		border-radius: 5px;
-    	display: flex;
-    	font-size: 1.3em;
- 		font-weight: bold;
-    	justify-content: center;
-    	text-align: center;
+		display: flex;
+		font-size: 1.3em;
+		text-align: left;
 	}
 }

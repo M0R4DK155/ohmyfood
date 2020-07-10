@@ -68,7 +68,7 @@ h3:after {
 	letter-spacing: -4px;
 	margin: 0 2rem;
 	text-decoration: none;
-	-webkit-background-clip: text;	
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -81,7 +81,7 @@ h3:after {
 	margin: 0 2rem;
 	text-decoration: none;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;	
+	-webkit-text-fill-color: transparent;
 }
 
 ul {
