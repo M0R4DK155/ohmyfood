@@ -1,54 +1,54 @@
 @import url("./style.css");
 @import url("./menus.css");
 main {
-	font-family: "Kaushan Script", sans-serif;
 	background-color: var(--blanc);
+	font-family: "Kaushan Script", sans-serif;
 	font-size: 16px;
 }
 
 h2 {
-	color: var(--vertclair);
 	background: var(--degradeMenu4);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
+	color: var(--vertclair);
 	padding-top: 1em;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
 }
 
 h3 {
-	font-size: 1.3em;
-	color: inherit;
-	text-decoration: none;
 	background: linear-gradient(to top, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 3px, transparent 3px) no-repeat center bottom / 0 100%;
-	transition: background-size .7s;
+	color: inherit;
+	font-size: 1.3em;
 	height: 31px;
+	text-decoration: none;
+	transition: background-size .7s;
 }
 
 h3:hover {
 	background-size: 25% 100%;
-	width: 100%;
 	transition: all 400ms;
+	width: 100%;	
 }
 
 h3:before {
-	content: "----------------------";
 	background: var(--degradeMenu4);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	letter-spacing: -4px;
+	content: "----------------------";
 	font-family: Arial;
+	letter-spacing: -4px;
 	margin: 0 1rem;
 	text-decoration: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
 }
 
 h3:after {
-	content: "----------------------";
 	background: var(--degradeMenu4d);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	letter-spacing: -4px;
+	content: "----------------------";
 	font-family: Arial;
+	letter-spacing: -4px;
 	margin: 0 1rem;
 	text-decoration: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 ul {

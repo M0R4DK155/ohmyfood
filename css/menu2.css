@@ -8,24 +8,24 @@ main {
 h2 {
 	background: var(--degradeMenu2);
 	font-family: "croissant one", Arial, Helvetica, sans-serif;
+	font-weight: lighter;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-	font-weight: lighter;
 }
 
 h3 {
+	background: linear-gradient(to top, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 3px, transparent 3px) no-repeat center bottom / 0 100%;
+	color: inherit;
 	font-family: "short stack", Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	color: inherit;
 	text-decoration: none;
-	background: linear-gradient(to top, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 3px, transparent 3px) no-repeat center bottom / 0 100%;
 	transition: background-size .7s;
 }
 
 h3:hover {
 	background-size: 38% 100%;
-	width: 100%;
 	transition: all 400ms;
+	width: 100%;
 }
 
 ul {
@@ -49,49 +49,49 @@ ul {
 
 .psmea h3::before,
 .psmea h3::after {
-	content: "-------------------------";
 	background: var(--brun);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	letter-spacing: -4px;
+	content: "-------------------------";
 	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: -4px;
 	text-decoration: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
 }
 
 .pdp {
-	font-family: "short stack", Arial, Helvetica, sans-serif;
 	color: var(--violetclair);
+	font-family: "short stack", Arial, Helvetica, sans-serif;
 	letter-spacing: -0.9px;
 }
 
 .pdp h3::before,
 .pdp h3::after {
-	content: "-------------------------";
 	background: var(--violetclair);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	letter-spacing: -4px;
+	content: "-------------------------";
 	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: -4px;
 	margin: 0 1rem;
 	text-decoration: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
 }
 
 .gs {
-	font-family: "short stack", Arial, Helvetica, sans-serif;
 	color: var(--mauve);
+	font-family: "short stack", Arial, Helvetica, sans-serif;
 	letter-spacing: -0.9px;
 }
 
 .gs h3::before,
 .gs h3::after {
-	content: "-------------------------";
 	background: var(--mauve);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	letter-spacing: -4px;
+	content: "-------------------------";
 	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: -4px;
 	margin: 0 1rem;
 	text-decoration: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
 }
 
 @media screen and (min-width: 768px) {
@@ -106,8 +106,8 @@ ul {
 		line-height: 1.5em;
 	}
 	.psmea {
-		margin-top: 1em;
 		letter-spacing: -2.5px;
+		margin-top: 1em;
 	}
 
 	.pdp{
