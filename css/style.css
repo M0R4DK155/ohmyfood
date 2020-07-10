@@ -98,4 +98,12 @@ footer a {
 	header h1 {
 		font-size: 3.5em;
 	}
+	p {
+		border-radius: 5px;
+    	display: flex;
+    	font-size: 1.3em;
+ 		font-weight: bold;
+    	justify-content: center;
+    	text-align: center;
+	}
 }
