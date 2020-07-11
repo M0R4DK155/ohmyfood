@@ -5,17 +5,17 @@
 	color: var(--jaune);
 	margin: 20px;
 	font-size: 20px;
-	font-family: Montserrat, sans-serif;
+	font-family: "Montserrat", sans-serif;
 	width: 165px;
 }
 
 .chargement:after {
 	display: inline-block;
-	animation: dotty steps(1, end) 1s infinite;
+	animation: dotted steps(1, end) 1s infinite;
 	content: '';
 }
 
-@keyframes dotty {
+@keyframes dotted {
 	0% {
 		content: '';
 	}
