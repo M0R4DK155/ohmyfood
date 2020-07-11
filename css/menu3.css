@@ -91,7 +91,7 @@ ul {
 }
 
 li {
-	font-family: "Cookie";
+	font-family: "Cookie", Arial, Helvetica, sans-serif;
 	font-size: 1.6em;
 }
 

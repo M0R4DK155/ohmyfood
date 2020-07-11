@@ -1,7 +1,7 @@
 @import url("./style.css");
 @import url("./menus.css");
 main {
-	font-family: "Devonshire", sans-serif;
+	font-family: "Devonshire", Arial, Helvetica, sans-serif;
 	background-color: var(--saumon);
 }
 
@@ -18,19 +18,19 @@ i {
 }
 
 .prelude {
-	font-family: "kalam", sans-serif;
+	font-family: "kalam", Arial, Helvetica, sans-serif;
 	font-size: 0.7rem;
 	letter-spacing: -0.1em;
 }
 
 .pdorgue {
-	font-family: "kalam", sans-serif;
+	font-family: "kalam", Arial, Helvetica, sans-serif;
 	font-size: 0.7rem;
 	letter-spacing: -0.1em;
 }
 
 .mouv {
-	font-family: "kalam", sans-serif;
+	font-family: "kalam", Arial, Helvetica, sans-serif;
 	font-size: 0.7rem;
 	letter-spacing: -0.1em;
 }
@@ -57,7 +57,7 @@ h3:after {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	letter-spacing: -5px;
-	font-family: Arial;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0 1rem;
 	text-decoration: none;
 }
